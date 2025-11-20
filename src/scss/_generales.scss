@@ -37,7 +37,8 @@
 .social-links {
     display: flex;
     gap: 10px;
-    justify-content: end;
+    justify-content: center;
+    margin-bottom: 1rem;
 
     a {
         display: flex;
@@ -53,6 +54,13 @@
         &:hover {
             background-color: $dark;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .padding-form {
+        padding-right: 7rem !important;
+        padding-left: 7rem !important;
     }
 }
 
