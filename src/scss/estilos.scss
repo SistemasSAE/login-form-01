@@ -7,6 +7,8 @@
 /* ----- ----- Codigo adicional ----- ----- */
 @import './generales';
 
+
+
 // Estilos adicionales responsivos
 @include media-breakpoint-down(lg) {
     .bg-white {
@@ -17,3 +19,4 @@
         min-height: 100vh;
     }
 }
+

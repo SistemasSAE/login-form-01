@@ -21,8 +21,8 @@
     <body>
         <main class="row bg-white g-0 min-vh-100">
             <div
-                class="col-12 col-lg-6 bg-image position-relative"
-                style="--bg-image: url('../images/fondo_loginSAEWeb.png')"
+                class="col-12 col-lg-6 bg-image img-fluid"
+                style=" width: 70%; --bg-image: url('../images/asdsa4.png')"
             >
                 <!-- Contenedor nuevo para el enlace SAE Sistema Web -->
                 <a
@@ -39,10 +39,12 @@
                 </a>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="form-container py-5">
-                    <div class="px-lg-5 mb-3">
+                <div class="form-container py-5 position-relative">
+                    <span class="dividing-line"></span>
+                    <div class="px-lg-5 mb-3" style=" display:flex; justify-content:center;">
                         <img src="../images/logo-SAE.png" alt="" class="img-fluid" />
                     </div>
+                    <h2 class="h4 mb-4 text-center">¡Bienvenido!</h2>
                     <h1 class="h4 mb-4 text-center">Iniciar Sesión - Personal</h1>
                     <form class="mb-5">
                         <div class="mb-3">
@@ -54,7 +56,7 @@
                                 id="txtUsuario"
                                 type="text"
                                 class="form-control"
-                                placeholder="Nombre de usuario"
+                                placeholder="Ingrese su usuario"
                                 required
                                 autocomplete="username"
                             />
@@ -68,7 +70,7 @@
                                 id="txtContrasena"
                                 type="password"
                                 class="form-control"
-                                placeholder="Contraseña"
+                                placeholder="Ingrese su contraseña"
                                 required
                                 autocomplete="current-password"
                             />
@@ -157,5 +159,6 @@
             </div>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+        <script src="../js/validar.js"></script>
     </body>
 </html>

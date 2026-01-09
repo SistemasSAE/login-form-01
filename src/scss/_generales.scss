@@ -38,6 +38,7 @@
     // Para tablets y laptops: menos padding horizontal
     padding-left: 2rem;
     padding-right: 2rem;
+    position: relative; // Añade esto para que .dividing-line se posicione relativo a este contenedor
 
     @include media-breakpoint-down(lg) {
         background: white;
@@ -85,7 +86,6 @@
         background-color: $primary;
         color: $white;
         transition: all 0.3s ease;
-
         &:hover {
             background-color: #27bcfb;
         }
@@ -98,3 +98,9 @@ main {
         position: relative;
     }
 }
+
+@keyframes social-links-animation { 
+    0% 
+    {transform: scale(1.0,1.0);} 
+    100% 
+    {transform: scale(1.7,1.7);}}
